@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837492dd-582c-414f-8240-0ff47858d61a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hexo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel/MailSending.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel/PayMeChien - Controller.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel/PayMeChien - Migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel/PayMeChien - Model.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel/PayMeChien - View.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhpStorm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Token.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB-Bot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB-Bot_Laravel.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel/PayMeChien - Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel/PayMeChien - Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Hexo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhpStorm.md" beforeDir="false" afterPath="$PROJECT_DIR$/PhpStorm.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +15,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - View.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="417">
-                <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <first_editor relative-caret-position="1296">
+                <caret line="48" selection-start-line="48" selection-end-line="48" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - Controller.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="4968">
+                <caret line="184" column="3" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FB-Bot.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-4698">
+                <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-end-line="136" />
               </first_editor>
               <second_editor />
             </state>
@@ -36,11 +53,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - Controller.md">
+        <entry file="file://$PROJECT_DIR$/雜.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="745">
-                <caret line="184" column="3" lean-forward="true" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FB-Bot_Laravel.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="3807">
+                <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -51,8 +78,8 @@
         <entry file="file://$PROJECT_DIR$/PhpStorm.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <first_editor relative-caret-position="459">
+                <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/Laravel/MailSending.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="647">
+              <first_editor relative-caret-position="1269">
                 <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
               </first_editor>
               <second_editor />
@@ -87,8 +114,8 @@
         <entry file="file://$PROJECT_DIR$/Hexo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="20" column="15" lean-forward="true" selection-start-column="2" selection-end-line="20" selection-end-column="15" />
+              <first_editor relative-caret-position="108">
+                <caret line="4" column="31" selection-start-line="4" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -131,21 +158,24 @@
         <option value="$PROJECT_DIR$/Model.md" />
         <option value="$PROJECT_DIR$/Laravel/MailSending.md" />
         <option value="$PROJECT_DIR$/Laravel/PayMeChien - Notes.md" />
-        <option value="$PROJECT_DIR$/Hexo.md" />
         <option value="$PROJECT_DIR$/Laravel/PayMeChien - Migration.md" />
         <option value="$PROJECT_DIR$/Laravel/PayMeChien - Model.md" />
         <option value="$PROJECT_DIR$/Token.md" />
         <option value="$PROJECT_DIR$/AWS/PhpStorm.md" />
-        <option value="$PROJECT_DIR$/PhpStorm.md" />
         <option value="$PROJECT_DIR$/Laravel/PayMeChien - View.md" />
         <option value="$PROJECT_DIR$/Laravel/PayMeChien - Controller.md" />
+        <option value="$USER_HOME$/Sites/messenger-webhook/index.js" />
+        <option value="$PROJECT_DIR$/Hexo.md" />
+        <option value="$PROJECT_DIR$/PhpStorm.md" />
+        <option value="$PROJECT_DIR$/FB-Bot.md" />
+        <option value="$PROJECT_DIR$/FB-Bot_Laravel.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="828" />
+    <option name="width" value="1445" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,26 +205,25 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Laravel" />
+      <recent name="$PROJECT_DIR$/AWS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Laravel" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Laravel" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/AWS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,19 +248,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560404778519</updated>
-      <workItem from="1560404780095" duration="45643000" />
+      <workItem from="1560404780095" duration="77687000" />
+      <workItem from="1561290126288" duration="2509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45643000" />
+    <option name="totallyTimeSpent" value="80196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1007" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1008" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.10436635" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11448349" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -254,9 +285,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/螢幕快照 2019-06-13 上午11.09.19.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/螢幕快照 2019-06-13 上午11.09.19.png" />
     <entry file="file://$PROJECT_DIR$/AWS/FromOneNote.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -270,26 +299,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="162">
             <caret line="6" selection-start-line="5" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="27">
-            <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hexo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="20" column="15" lean-forward="true" selection-start-column="2" selection-end-line="20" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -315,16 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - View.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="417">
-            <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Token.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -335,11 +334,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laravel/MailSending.md">
+    <entry file="file://$USER_HOME$/Sites/node-js-getting-started/index.js" />
+    <entry file="file://$USER_HOME$/Sites/messenger-webhook/index.js" />
+    <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - View.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="647">
-            <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <first_editor relative-caret-position="1296">
+            <caret line="48" selection-start-line="48" selection-end-line="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - Controller.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4968">
+            <caret line="184" column="3" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhpStorm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
@@ -355,22 +376,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PhpStorm.md">
+    <entry file="file://$PROJECT_DIR$/Laravel/MailSending.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <first_editor relative-caret-position="1269">
+            <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laravel/PayMeChien - Controller.md">
+    <entry file="file://$PROJECT_DIR$/Hexo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="745">
-            <caret line="184" column="3" lean-forward="true" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
+          <first_editor relative-caret-position="108">
+            <caret line="4" column="31" selection-start-line="4" selection-end-line="5" />
           </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB-Bot_Laravel.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3807">
+            <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB-Bot.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-4698">
+            <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-end-line="136" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/雜.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
           <second_editor />
         </state>
       </provider>

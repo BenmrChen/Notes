@@ -15,7 +15,7 @@ Select Fira Code as "Primary font" under Settings → Editor → Font
 * 縮排 number row `View>>Active Editor>>Show Gutter Icons`
 * cmd + d: 找方法的來源
 * cmd + [: 回原方法
-
+* opt + p: 找要輸入的東西
 
 * gettype()
 * get_class()
