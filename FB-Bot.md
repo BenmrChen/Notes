@@ -147,6 +147,7 @@
 - Deploy
     - AWS C9/Heroku: 失敗
     - ngrok: 成功
+        - 指令: `./ngrok http 5000` (目前沒有把ngrok放到全域指令XD)
 - 繼續完成.js，確定可以 echo
 - 回來重整全部流程
 - 實作 Laravel   

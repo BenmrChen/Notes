@@ -148,3 +148,73 @@
         ```
     - https://stackoverflow.com/questions/22244738/how-can-i-use-guzzle-to-send-a-post-request-in-json
     - https://guzzle.readthedocs.io/en/latest/request-options.html?highlight=json#body
+    
+- access_token 設定
+    - 放在.env裡當作是一個全域變數來引用
+    - 引用方法: 
+        - .env檔內
+        ```
+        access_token = <my_token>
+        ```
+        - 檔案內
+        ```
+        $access_token=env('access_token')
+        ```
+    - 記得要在.env.example裡加一欄
+
+- Typing Hint
+    - code
+     ```php
+        <?php
+        Route::post('/webhook', function (Request $request) { 
+            if ($request->object == 'page') {
+                foreach ($request->entry as $entry) {
+                    $webhook_event = $entry['messaging'][0];
+                    $sender_psid = $webhook_event['sender']['id'];
+        
+                }
+                handleMessage($sender_psid, $webhook_event);
+                return response('EVENT_RECEIVED');
+            } else {
+                return response('', 404);
+            }
+        
+        });
+     ```
+    - 用postman模擬FB傳入的string (符合json格式)
+     ```
+     {
+         "object": "page",
+         "entry": [
+             {
+                 "messaging": [
+                     {
+                         "sender": {
+                             "id": "2205210249526222"
+                         },
+                         "recipient": {
+                             "id": "1421661017849456"
+                         },
+                         "timestamp": 1561096169867,
+                         "message": {
+                             "mid": "iLrY0OdHj8QnOstgvefOZMiEYWEsnLoC3bTCQVJLbL9YB6i4Fkycy_tLcptOHcflo0G6oadCpstBOBkKvo52PA",
+                             "seq": 0,
+                             "text": "111"
+                         }
+                     }
+                 ]
+             }
+         ]
+     }
+     ```
+    - `Request $request`: 把$request指定成Request的class，所以才可以使用`$request->object`方法去指定
+    去`page`的值
+        - 拿進來的東西算是個`collection`，只有第一層可以用`->`方法，下面幾層都是`array`所以得用foreach & 多重矩陣的方法來取值
+            ```
+            foreach ($request->entry as $entry) {
+            $webhook_event = $entry['messaging'][0];
+            $sender_psid = $webhook_event['sender']['id'];
+            }
+            ```
+        - 因為有用到`request` class 所以上面要加 `use Illuminate\Http\Request;`
+        - 不用`request $request`也可以，用`request()->all()`也可以取到資料，後面再用取array的方式來取值

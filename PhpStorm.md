@@ -13,9 +13,8 @@ Select Fira Code as "Primary font" under Settings → Editor → Font
 * 快速選整個字 `option + ↑`  (連續按會變成整句，整段，整篇文章)
 * 選取全部同字 `control + command + G`
 * 縮排 number row `View>>Active Editor>>Show Gutter Icons`
-* cmd + d: 找方法的來源
 * cmd + [: 回原方法
-* opt + p: 找要輸入的東西
+* cmd + p: 找要輸入的東西 (要在在括號裡面執行)
 
 * gettype()
 * get_class()

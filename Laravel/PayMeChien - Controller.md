@@ -115,6 +115,22 @@ PayMeChien - Controller
                         暱稱: <input type="text" name="nickname" placeholder="暱稱" value="{{ old('nickname') }}">
                 </label>
                 ``` 
+                
+        * 驗證是否唯一
+            1. 關鍵字: `unique`
+            2. 作法: 
+               - 
+                 ```
+                    // Email
+                              'email'=>[
+                                  'required',
+                                  'max:150',
+                                  'email',
+                                  'unique:users,email'
+                                  // 驗證在資料庫裡，users這個table的email欄位
+                              ],
+                  ```
+                - reference: https://laravel.tw/docs/5.2/validation#validation-quickstart
     3. 密碼加密: 使用Hash
         ```php
         <?php
@@ -184,3 +200,50 @@ PayMeChien - Controller
  - 位置: `config/session.php`
  - 
     
+## Typing Hint
+- PHP的語法 = 類型約束
+- e.g. (這個在`serviceController.php`裡)
+    ```php
+    <?php
+    try {
+      DB::beginTransaction();  
+      // 建立交易資料
+      Transaction::create($transaction_data);
+      // 交易結束
+      DB::commit();
+    } catch (Exception $exception) {
+      // 恢復原先交易狀態
+      DB::RollBack();
+    
+      // 回傳錯誤訊息
+      $error_message = [
+          'msg' => [$exception->getMessage()]
+      ];
+
+      return redirect()
+              ->back()
+              ->withErrors($error_message)
+              ->withinput();
+    };
+    ```
+
+    - `DB::beginTransaction()`:資料庫開始動作，直到DB:commit之前，資料庫都不會變更(也不會被其他的請求變更)，
+    意即只有此次的交易可以做些資料異動。
+    > 這邊要提到一個蠻重要的 `Transaction`，它的功用就是當我們在執行資料庫內容變更時，控制我們的資料變動是否要真的寫入到DB的一個功能，通常在開發時，
+    如果有多步DB內容更動的操作，會建議加上，這樣萬一出錯時，才不會有部分指令寫入，另一部分卻沒有執行到的狀況。
+    - `catch (Exception $exception) {}`:
+        - 這個`Exception $exception`就是`typing hint`, 意即把`$exception`這個變數指定成`Exception`
+        的`class` (class是還沒實例化的，實例化後才會變object)
+        - 可以按`command + b`看`Exception`是怎麼被宣告的
+        - 下面回傳錯誤訊息的部份，因為$exception這個object有很多東西，我只要error message，
+        所以要用`getMessage()`這個方法 (如果沒用的話就會有一堆訊息，包括處理了哪些檔案、第幾行怎麼了blablabla)
+            ```
+            // 回傳錯誤訊息
+            $error_message = [
+                'msg' => [$exception->getMessage()]
+            ```
+    - `try{} + catch{}`
+        - 在`try {}`一旦出現`exception`，就會結束執行並跳到`catch {}`
+- Reference: 
+    - https://www.php.net/manual/en/language.oop5.typehinting.php
+    - https://laravel.tw/docs/4.2/database#database-transactions
