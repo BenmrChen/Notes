@@ -247,3 +247,58 @@ PayMeChien - Controller
 - Reference: 
     - https://www.php.net/manual/en/language.oop5.typehinting.php
     - https://laravel.tw/docs/4.2/database#database-transactions
+
+# 取得變數的方法
+- 取得URI
+    - 在*購買商品*route:
+        ```php
+        <?php
+        Route::group(['prefix' => 'service'], function () {
+              // 服務清單檢視
+              Route::get('/', "ServiceController@serviceListPage");
+          
+              // 指定商品服務
+              Route::group(['prefix' => '{service_id}'], function(){
+          
+                 // 購買服務單品
+                 Route::post('/buy', "ServiceController@serviceItemBuyProcess");
+                 
+              });
+          });
+         ```
+         >其實就是*Route::post('service/<{service_id}/buy', "ServiceController@serviceItemBuyProcess")*
+    - Controller:
+        ```php
+        <?php
+        public function serviceItemBuyProcess($service_id) {
+          code;
+        }
+        ```
+    - public function serviceItemBuyProcess($service_id)
+- 取得User input 存在 body 的內容
+    - blade:
+        ```blade
+        <form action="/service/{{ $Service->id }}/buy" method="post">
+        購買數量
+        <select name="buy_count">
+        @for($count = 0; $count <= $Service->remain_count; $count++)
+          <option value="{{ $count }}">
+          {{ $count }}
+          </option>
+        @endfor
+        </select>
+        <button type="submit">
+        購買
+        </button>
+        {{ csrf_field() }}
+        </form>
+        ```
+        
+    - Controller:
+      ```php
+      <?php
+      public function serviceItemBuyProcess($service_id) {
+      $input = request()->all();
+      // 取的方法: $input('buy_count');
+      }
+      ```

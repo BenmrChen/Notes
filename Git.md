@@ -1,31 +1,35 @@
 - git 多點合成一點
-    - master git init
-    - master touch .gitignore
-    - master git add .gitignore
-    - master git commit -m 'init'
-    - master git checkout -b Feature
-    - Feature touch 1 2 3 4
-    - Feature git add 1
-    - Feature git commit -m '1'
-    - Feature {repeat step 7. 8. for file 2, 3, 4 }
-    - Feature git branch Dev
-    - Feature git rebase -i --root --onto master Dev
-    - {in vim editor} {reword 1, fixup 2, 3, 4}
-    - {in vim editor} {rename commint '4 in 1'}
-    - Dev git checkout master
-    - master git merge Dev
-    - master git chechout Feature
-    - Feature touch 5 6 7 8
-    - Feature git add 5
-    - Feature git commit -m '5'
-    - Feature {repeat step 17. 18. for file 6, 7, 8 }
-    - Feature git branch ToBeMerge
-    - Feature git rebase -i {commit 4} --onto Dev ToBeMerge
-    - {in vim editor} {reword 5, fixup 6, 7, 8}
-    - {in vim editor} {rename commint '8 in 5'}
-    - ToBeMerge git checkout Dev
-    - Dev git merge ToBeMerge
-    
+    1. master git init
+    2. master touch .gitignore
+    3. master git add .gitignore
+    4. master git commit -m 'init'
+    5. master git checkout -b Feature
+    6. Feature touch 1 2 3 4
+    7. Feature git add 1
+    8. Feature git commit -m '1'
+    9. Feature {repeat step 7. 8. for file 2, 3, 4 }
+    10. Feature git branch Dev
+    11. Feature git rebase -i --root --onto master Dev
+    // 目前在feature分支上，要把1、2、3、4 commit 給合併起來變*4in1*並把Dev分支貼上去，指向master(以master為基底)
+    12. {in vim editor} {reword 1, fixup 2, 3, 4}
+    13. {in vim editor} {rename commint '4 in 1'}
+    14. Dev git checkout master
+    15. master git merge Dev
+    16. master git checkout Feature
+    17. Feature touch 5 6 7 8
+    18. Feature git add 5
+    19. Feature git commit -m '5'
+    20. Feature {repeat step 17. 18. for file 6, 7, 8 }
+    21. Feature git branch ToBeMerge
+    22. Feature git rebase -i {commit 4} --onto Dev ToBeMerge
+    // 目前在feature分支上，要把5、6、7、8 commit 給合併起來變*8in1*並把ToBeMerge分支貼上去，指向Dev(以Dev為基底)
+    23. {in vim editor} {reword 5, fixup 6, 7, 8}
+    24. {in vim editor} {rename commint '8 in 5'}
+    25. ToBeMerge git checkout Dev
+    26. Dev git merge ToBeMerge
+    ![](https://i.imgur.com/ZezXPPb.jpg)
+    https://i.imgur.com/ZezXPPb.jpg
+
 - git .gitignore 用法
     - 加到.gitignore
         - e.g. `/.idea`
